@@ -4,8 +4,10 @@ block contents
   .wrapper
     include _header
 
-    h1 success!!
-    p You can use Pug, SCSS and TypeScript.
-    p: a(href="https://github.com/Michin0suke/gulp-pug-sass-typescript") Learn more
+    .container
+      - for(var c = 1; c <= 5; c++)
+        .column
+          - for(var r = 1; r <= 6; r++)
+            .row: a(class=`grid-${c}-${r}`, href="")
 
     include _footer

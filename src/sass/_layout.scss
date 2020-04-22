@@ -14,18 +14,23 @@ p {
   line-height: 26px;
 }
 
-a {
-  color: #666;
-  &:hover {
-    border-bottom: solid 2px #888;
-  }
-  &::before {
-    font-size: 14px;
-    content: '→ ';
-  }
-}
-
 header, footer {
   color: #AAA;
   user-select: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  border: solid 1px;
+  text-align: center;
+}
+.column {
+  width: 100%;
+}
+.row {
+  height: 50px;
+  border: solid 1px;
 }

@@ -1,0 +1,122 @@
+a.covered-link {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.visibility-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px; }
+
+.when-less-than.hidden.md {
+  display: none; }
+  @media screen and (min-width: 896px) {
+    .when-less-than.hidden.md.inline {
+      display: inline; }
+    .when-less-than.hidden.md.inline-block {
+      display: inline-block; }
+    .when-less-than.hidden.md.block {
+      display: block; } }
+
+.when-less-than.hidden.sm {
+  display: none; }
+  @media screen and (min-width: 480px) {
+    .when-less-than.hidden.sm.inline {
+      display: inline; }
+    .when-less-than.hidden.sm.inline-block {
+      display: inline-block; }
+    .when-less-than.hidden.sm.block {
+      display: block; } }
+
+.when-less-than.appear.md {
+  display: none; }
+  @media screen and (max-width: 895px) {
+    .when-less-than.appear.md.inline {
+      display: inline; }
+    .when-less-than.appear.md.inline-block {
+      display: inline-block; }
+    .when-less-than.appear.md.block {
+      display: block; } }
+
+.when-less-than.appear.sm {
+  display: none; }
+  @media screen and (max-width: 479px) {
+    .when-less-than.appear.sm.inline {
+      display: inline; }
+    .when-less-than.appear.sm.inline-block {
+      display: inline-block; }
+    .when-less-than.appear.sm.block {
+      display: block; } }
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: 'palt';
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth; }
+
+@font-face {
+  font-family: "Apple LiGothic Medium";
+  src: url("./assets/fonts/Apple_LiGothic_Medium.woff") format("woff");
+  unicode-range: U+0000-00FF;
+  font-display: swap; }
+
+body {
+  font-family: 'Apple LiGothic Medium', 'Roboto', 'Noto Sans JP', sans-serif; }
+
+footer {
+  text-align: center;
+  margin: 50px 0; }
+
+header {
+  text-align: center;
+  margin: 50px 0; }
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .icon.twitter:hover, .icon.instagram:hover {
+    opacity: 0.7; }
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px; }
+
+h1 {
+  padding-bottom: 10px;
+  font-size: 40px; }
+
+p {
+  font-size: 16px;
+  line-height: 26px; }
+
+header, footer {
+  color: #AAA;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+  border: solid 1px;
+  text-align: center; }
+
+.column {
+  width: 100%; }
+
+.row {
+  height: 50px;
+  border: solid 1px; }
