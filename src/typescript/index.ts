@@ -9,7 +9,7 @@ if (/github/.test(hostname)) {
 }
 console.log(`isHost: ${isLocalhost}`);
 
-fetch(isLocalhost ? '/stream-links/data.json' : '/data.json')
+fetch(isLocalhost ? '/data.json' : '/stream-links/data.json')
   .then((res) => res.json())
   .then((json) => {
     for (let c = 1; c <= 5; c += 1) {
