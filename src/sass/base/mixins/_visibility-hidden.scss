@@ -1,0 +1,10 @@
+@mixin visibility-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.visibility-hidden {
+  @include visibility-hidden
+}

@@ -1,0 +1,60 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".ts"
+    ],
+    "import/resolver": {
+      // "babel-plugin-root-import": {
+      //   "rootPathPrefix": "#",
+      //   "rootPathSuffix": "src"
+      // },
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "import/extensions": [
+      // "import/resolver": {
+    //   "babel-plugin-root-import": {
+    //     "rootPathPrefix": "#",
+    //     "rootPathSuffix": "src"
+    //   }
+    // }
+      "error", "always",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "max-len": "off",
+    "no-restricted-globals": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "plugins": [
+        "@typescript-eslint"
+      ]
+    }
+  ]
+}

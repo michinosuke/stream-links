@@ -1,0 +1,47 @@
+- var image_path = './assets/img/'
+- var css_path = './style.css'
+- var js_path = './bundle.min.js'
+-
+  var js_lib_path = {
+    jquery: './assets/js/jquery-3.4.1.min.js',
+    jqueryCookie: './assets/js/jquery.cookie.js'
+  }
+-
+  var color = {
+    basic_red: '#C2191F'
+  }
+
+- var base_dir = ''
+//- - var base_dir = ''
+-
+  var url = {
+    page: {
+      top: base_dir + '/'
+    },
+    query: {
+      sort: {
+        no: '?sort=no',
+        ranking: '?sort=ranking'
+      }
+    },
+    endpoint: {
+      login: {
+        twitter: base_dir + '/login/twitter',
+        line: base_dir + '/login/line'
+      }
+    }
+  }
+-
+  var meta = {
+    title: 'TITLE',
+    app_title: 'APP TITLE',
+    url: 'https://example.com',
+    apple_touch_icon: image_path + 'apple-touch-icon.png',
+    icon: {
+      url: './assets/img/icon-192x192.png',
+      type: 'png'
+    },
+    description: 'description',
+    keywords: 'keywords,keywords,keywords',
+    og_image: image_path + 'twitter-card.png',
+  }

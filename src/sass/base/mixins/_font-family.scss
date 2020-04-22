@@ -1,0 +1,7 @@
+@mixin font-family($lang) {
+  @if $lang == ja {
+    font-family: 'Noto Sans JP', sans-serif;
+  } @else {
+    font-family: 'Apple LiGothic Medium', 'Roboto', 'Noto Sans JP', sans-serif;
+  }
+}

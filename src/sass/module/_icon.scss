@@ -1,0 +1,8 @@
+.icon {
+  @include bg-contain;
+  &.twitter, &.instagram {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

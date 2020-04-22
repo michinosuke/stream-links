@@ -1,0 +1,11 @@
+@import '_tools';
+
+* {
+  margin: 0;
+  font-feature-settings: 'palt';
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  // background-color: rgba(255,0,0,0.05);
+}

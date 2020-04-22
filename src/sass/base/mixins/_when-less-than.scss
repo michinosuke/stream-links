@@ -1,0 +1,43 @@
+@mixin visible-settings($size, $mode) {
+  &.#{$size} {
+    @if $mode == 'hidden' {
+      @include media-width-up($size) {
+        &.inline {
+          display: inline;
+        }
+        &.inline-block {
+          display: inline-block;
+        }
+        &.block {
+          display: block;
+        }
+      }
+      display: none;
+    }
+    @else {
+      @include media-width-down($size) {
+        &.inline {
+          display: inline;
+        }
+        &.inline-block {
+          display: inline-block;
+        }
+        &.block {
+          display: block;
+        }
+      }
+      display: none;
+    }
+  }
+}
+
+.when-less-than {
+  &.hidden {
+    @include visible-settings(md, 'hidden');
+    @include visible-settings(sm, 'hidden');
+  }
+  &.appear {
+    @include visible-settings(md, 'appear');
+    @include visible-settings(sm, 'appear');
+  }
+}

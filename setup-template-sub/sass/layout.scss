@@ -1,0 +1,13 @@
+.heading-top-padding {
+  @include media-width-down(sm) {
+    display: none;
+  }
+  height: 130px;
+}
+
+.heading-bottom-padding {
+  @include media-width-down(sm) {
+    height: 35px;
+  }
+  height: 68px;
+}

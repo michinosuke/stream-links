@@ -1,0 +1,49 @@
+$breakpoint-width-up: (
+  'sm': '480px',
+  'md': '896px',
+  'lg': '1024px',
+) !default;
+
+$breakpoint-width-down: (
+  'sm': '479px',
+  'md': '895px',
+  'lg': '1023px',
+) !default;
+
+@mixin media-width-up($breakpoint: md) {
+  @if str-index($breakpoint, px) {
+    @media screen and (min-width: #{$breakpoint}) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: #{map-get($breakpoint-width-up, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin media-width-down($breakpoint: md) {
+  @if str-index($breakpoint, px) {
+    @media screen and (max-width: #{$breakpoint}) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (max-width: #{map-get($breakpoint-width-down, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin media-height-up($breakpoint) {
+  @media screen and (min-height: #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin media-height-down($breakpoint) {
+  @media screen and (max-height: #{$breakpoint}) {
+    @content;
+  }
+}

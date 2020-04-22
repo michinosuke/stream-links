@@ -1,0 +1,31 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+h1 {
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  color: #666;
+  &:hover {
+    border-bottom: solid 2px #888;
+  }
+  &::before {
+    font-size: 14px;
+    content: '→ ';
+  }
+}
+
+header, footer {
+  color: #AAA;
+  user-select: none;
+}

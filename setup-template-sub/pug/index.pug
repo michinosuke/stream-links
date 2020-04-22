@@ -1,0 +1,26 @@
+extends _layout
+
+include ../../../pug/_components
+
+block contents
+  .wrapper
+    +header
+
+    .heading-top-padding
+
+    +heading('Special guest', '特別審査員')
+
+    .heading-bottom-padding
+
+
+
+    .vote-button-wrapper
+      +vote-button-box
+      .vote-button-padding
+      +vote-button-instagram
+
+    +goto-top
+    +link-to-vote
+    +login-choose-box
+
+    include ../../../pug/_footer
