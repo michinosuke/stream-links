@@ -2,7 +2,7 @@ import d from './default';
 
 d();
 
-fetch('http://192.168.0.12:3000/data.json')
+fetch('/data.json')
   .then((res) => res.json())
   .then((json) => {
     for (let c = 1; c <= 5; c += 1) {
