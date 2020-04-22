@@ -2,7 +2,14 @@ import d from './default';
 
 d();
 
-fetch('/data.json')
+const { hostname } = document.location;
+let isLocalhost = true;
+if (/github/.test(hostname)) {
+  isLocalhost = false;
+}
+console.log(`isHost: ${isLocalhost}`);
+
+fetch(isLocalhost ? '/stream-links/data.json' : '/data.json')
   .then((res) => res.json())
   .then((json) => {
     for (let c = 1; c <= 5; c += 1) {
