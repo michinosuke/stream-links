@@ -40,7 +40,7 @@
     "gulp-w3c-html-validator": "^1.4.4",
     "gulp-wait": "^0.0.2",
     "minimist": "^1.2.0",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "rimraf": "^3.0.0",
     "sass": "^1.23.0",
     "sass-lint": "^1.13.1",
